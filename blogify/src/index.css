@@ -50,6 +50,7 @@ html{
   background-color: var(--main-color);
   margin-left: 2rem;
   outline: 1px solid #fff;
+  text-transform: capitalize;
 }
 
 .hero-sec .sign-btn:hover{

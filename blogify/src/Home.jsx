@@ -13,11 +13,14 @@ const Home = () => {
                     <img className='hero-logo' src={Logo} alt='logo' />
                     <p className='hero-cap'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
                     <div className='hero-btn'>
-                        <NavLink to="/signup" style={{ textDecoration: 'none' }}>
+                        {/* <NavLink to="/signup" style={{ textDecoration: 'none' }}>
                             <Button className='sign-btn sign-up-btn' variant="contained">Sign Up</Button>
                         </NavLink>
                         <NavLink to="/signin" style={{ textDecoration: 'none' }}>
                             <Button className='sign-btn sign-in-btn' variant="contained">Sign In</Button>
+                        </NavLink> */}
+                        <NavLink to="/signup" style={{ textDecoration: 'none' }}>
+                            <Button className='sign-btn sign-in-btn' variant="contained">Start Blogging</Button>
                         </NavLink>
 
                         

@@ -2,6 +2,9 @@ import React from 'react';
 import Header from './Header';
 import MiniBlog from './MiniBlog';
 import Img from './images/contemplative-reptile.jpg';
+import CreatePost from './CreatePost';
+import Profile from './Profile';
+import News from './News';
 const content = [
     {
         key: 1,
@@ -39,13 +42,25 @@ const SignUp = () => {
     return(
         <>
             <Header />
-            {
+            <div className="main-container">
+                <div className="left">
+                    <Profile/>
+                </div>
+                <div className="center">
+                    <CreatePost/>
+                    {
                 content.map((e)=>{
                     return(
                         <MiniBlog img={Img} name={e.name} text={e.text} date={e.date} key={e.key} />
                     )
                 })
             }
+                </div>
+                <div className="right">
+                    <News/>
+                </div>
+            </div>
+            
         </>
     );
 }
