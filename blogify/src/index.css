@@ -114,3 +114,50 @@ html{
   min-height: calc(100vh - 150px);
   padding: 10px 20px;
 }
+
+.tri{
+  position: absolute;
+  background-color: #fff;
+  clip-path: polygon(50% 0%, 0 100%, 100% 100%);
+  animation: up-down 2s infinite ease-in-out;
+}
+
+.tri-1{
+  height: 40px;
+  width: 40px;
+  bottom: 20%;
+  right: 20%;
+}
+.tri-2{
+  height: 60px;
+  width: 60px;
+  top: 10%;
+  left: 20%;
+}
+.tri-3{
+  height: 140px;
+  width: 140px;
+  bottom: 10%;
+  left: 10%;
+}
+.tri-4{
+  height: 80px;
+  width: 80px;
+  top: 10%;
+  right: 10%;
+}
+
+@keyframes up-down {
+  0%{
+    transform: translateY(0);
+  }
+  25%{
+    transform: translateY(4px);
+  }
+  75%{
+    transform: translateY(-4px);
+  }
+  100%{
+    transform: translateY(0);
+  }
+}
