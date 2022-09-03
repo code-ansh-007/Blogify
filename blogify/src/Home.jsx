@@ -8,6 +8,10 @@ import { NavLink } from 'react-router-dom';
 const Home = () => {
     return (
         <>
+            <div className='tri tri-1'></div>
+            <div className='tri tri-2'></div>
+            <div className='tri tri-3'></div>
+            <div className='tri tri-4'></div>
             <div className='home-page'>
                 <div className='hero-sec'>
                     <img className='hero-logo' src={Logo} alt='logo' />
