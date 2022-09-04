@@ -3,13 +3,72 @@
 
 .profile {
   height: 400px;
-  border: 1px solid gray;
+  /* border: 1px solid gray; */
+  width: 300px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 4px 4px 5px rgb(207, 207, 207);
+}
+
+.dp{
+  width: 80px;
+  border-radius: 100%;
+  /* border: 1px solid gray; */
+  margin: 0 auto;
+  outline: 3px solid blueviolet;
 }
 
 /* create post form css */
 
-.input-form{
+.create-post-div{
+  width: 100%;
+  background-color: #ffffff;
+  border-radius: 10px;
+}
 
+.input-form{
+  display: flex;
+  flex-direction: column;
+  /* border:none; */
+  /* background-color: red; */
+  margin-top: 0;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 4px 4px 5px rgb(207, 207, 207);
+}
+
+.title-input{
+  outline: none;
+  border: none;
+  border-bottom: 1px solid gray;
+  padding: 10px;
+}
+
+.name-input{
+  outline: none;
+  border: none;
+  border-bottom: 1px solid gray;
+  padding: 10px;
+}
+
+.text-input{
+  outline:none;
+  border:none;
+  padding: 10px;
+}
+
+.input-form  button{
+  border: 1px solid  #712cf9;
+  background-color: transparent;
+  width: 100px;
+  padding: 7px;
+  border-radius: 20px;
+  color: gray;
+}
+
+.input-form button:hover{
+  background-color: #712cf9;
+  color: white;
 }
 
 /* weather div styles */
@@ -23,18 +82,129 @@
 
 .main-container{
   display: grid;
-  grid-template-areas: 
-  "left center right";
+  grid-template-columns: 1fr 2fr 1fr;
+  margin-top: 80px;
 }
 
 .center{
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center ;
 }
 
 .center, .left, .right{
   margin: 20px;
 }
-/* https://prod.liveshare.vsengsaas.visualstudio.com/join?55C9094013854EA4FFE20DA068DC0150056A */
+
+/* profile section css */
+
+.profile-pic{
+  display: flex;
+}
+
+.details{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10px;
+  padding: 20px;
+  border-bottom: 1px solid rgb(180, 180, 180);
+}
+
+.details p{
+  font-size: 13px;
+}
+
+.top-picks{
+  margin: 20px;
+  /* padding: 30px; */
+}
+
+.top-picks > h4{
+  /* margin-bottom: 3px; */
+  padding-bottom: 10px;
+}
+
+.picks > a{
+  text-decoration: none;
+  color: white; 
+}
+
+.picks{
+  font-size: 11px;
+  margin-bottom: 5px;
+  color: gray;
+  text-decoration: none;
+}
+
+.cover-pic{
+  width: 100%;
+  margin-bottom: -40px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+/* News Component */
+
+.news-title{
+  font-size: 12px;
+}
+
+.right{
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.blog-post{
+  width: 100%;
+}
+
+.card{
+  max-width: 100%;
+  min-width: none;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.news-image{
+  width: 100%;
+}
+
+.news-image img{
+  width: 100%;
+  /* max-width: 200px; */
+}
+
+.profile{
+  position: fixed;
+}
+
+.center .search-bar{
+  width: 100%;
+  font-size: 15px;
+  padding: 5px 10px;
+  border: none;
+  border-radius:10px;
+  box-shadow: 4px 4px 5px rgb(207, 207, 207);
+  margin-bottom: 10px;
+  outline:none;
+}
+
+@media only screen and (max-width: 600px) {
+  .main-container{
+    display: block;
+  }
+  .left{
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 1270px){
+  .left{
+    display: none;
+  }
+  .main-container{
+    grid-template-columns: 2fr 1fr;
+  }
+}

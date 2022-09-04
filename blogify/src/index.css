@@ -12,6 +12,10 @@ font-family: 'Roboto', sans-serif; */
   --main-color: #712cf9;
 }
 
+body{
+  background-color: rgb(228, 227, 227);
+}
+
 html{
   font-size: 10px;
 }
@@ -51,6 +55,7 @@ html{
   margin-left: 2rem;
   outline: 1px solid #fff;
   text-transform: capitalize;
+  border-radius: 20px;
 }
 
 .hero-sec .sign-btn:hover{
@@ -121,6 +126,7 @@ html{
   background-color: #fff;
   clip-path: polygon(50% 0%, 0 100%, 100% 100%);
   animation: up-down 2s infinite ease-in-out;
+  /* animation-direction: alternate; */
 }
 
 .tri-1{
@@ -153,12 +159,13 @@ html{
     transform: translateY(0);
   }
   25%{
-    transform: translateY(4px);
+    transform: translateY(6px);
   }
   75%{
-    transform: translateY(-4px);
+    transform: translateY(-6px);
   }
   100%{
     transform: translateY(0);
   }
 }
+

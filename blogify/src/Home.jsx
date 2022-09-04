@@ -15,7 +15,7 @@ const Home = () => {
             <div className='home-page'>
                 <div className='hero-sec'>
                     <img className='hero-logo' src={Logo} alt='logo' />
-                    <p className='hero-cap'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                    <p className='hero-cap'>Blogs, News, People all in one place, Blogify is your one stop destination for all your daily cringe topics </p>
                     <div className='hero-btn'>
                         {/* <NavLink to="/signup" style={{ textDecoration: 'none' }}>
                             <Button className='sign-btn sign-up-btn' variant="contained">Sign Up</Button>
@@ -23,7 +23,7 @@ const Home = () => {
                         <NavLink to="/signin" style={{ textDecoration: 'none' }}>
                             <Button className='sign-btn sign-in-btn' variant="contained">Sign In</Button>
                         </NavLink> */}
-                        <NavLink to="/signup" style={{ textDecoration: 'none' }}>
+                        <NavLink to="/feed" style={{ textDecoration: 'none' }}>
                             <Button className='sign-btn sign-in-btn' variant="contained">Start Blogging</Button>
                         </NavLink>
 
@@ -39,7 +39,7 @@ const Home = () => {
                 </div>
                 <div className='home-abt'>
                     <h2>Why Blogify?</h2>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                    <p>We provide a portal to share blogs and news to the world, find the topic you love, follow the news, and just hang out with people online !!!</p>
                 </div>
                 <Footer />
             </div>
