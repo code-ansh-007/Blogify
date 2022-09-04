@@ -1,6 +1,7 @@
 {
   "name": "server",
   "version": "1.0.0",
+  "homepage": "https://blogify-123.netlify.app/",
   "type": "module",
   "description": "",
   "main": "server.js",
