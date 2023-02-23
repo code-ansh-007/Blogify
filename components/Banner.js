@@ -1,6 +1,5 @@
 import Image from "next/image";
 import React from "react";
-import ansh from "../images/Me_Pic.jpg";
 import { HiUserCircle } from "react-icons/hi";
 import Link from "next/link";
 import { userAuth } from "../context/AuthContext";

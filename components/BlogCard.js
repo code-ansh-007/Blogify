@@ -1,4 +1,3 @@
-import React, { useEffect } from "react";
 import { BsThreeDots } from "react-icons/bs";
 import Image from "next/image";
 import { useState } from "react";
