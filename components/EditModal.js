@@ -113,7 +113,7 @@ const EditModal = ({ blogId }) => {
         onClick={handleClose}
         className="h-full fixed top-0 left-0 w-full flex flex-col items-center justify-center bg-black bg-opacity-50"
       >
-        <main className="flex flex-col items-center justify-center p-5 rounded-md bg-white">
+        <main className="flex flex-col max-h-[700px] overflow-y-hidden items-center justify-center p-5 rounded-md bg-white">
           <span className="text-3xl text-gray-500 mb-5">Edit Blog</span>
           <form onSubmit={updatePost} className="flex flex-col space-y-10">
             <input
@@ -142,11 +142,11 @@ const EditModal = ({ blogId }) => {
                 </span>
               </div>
             ) : (
-              <div className="flex items-center space-x-2">
-                <AiFillCamera
-                  className="text-3xl text-gray-500 active:scale-105 transition transform duration-200"
-                  onClick={() => imagePickerRef.current.click()}
-                />
+              <div
+                className="flex items-center space-x-2"
+                onClick={() => imagePickerRef.current.click()}
+              >
+                <AiFillCamera className="text-3xl text-gray-500 active:scale-105 transition transform duration-200" />
                 <span className="text-gray-600">Upload Pic</span>
               </div>
             )}
