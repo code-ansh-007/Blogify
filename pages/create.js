@@ -125,11 +125,11 @@ const create = () => {
               </span>
             </div>
           ) : (
-            <div className="flex items-center space-x-2">
-              <AiFillCamera
-                className="text-3xl text-gray-500 active:scale-105 transition transform duration-200"
-                onClick={() => imagePickerRef.current.click()}
-              />
+            <div
+              onClick={() => imagePickerRef.current.click()}
+              className="flex items-center space-x-2"
+            >
+              <AiFillCamera className="text-3xl text-gray-500 active:scale-105 transition transform duration-200" />
               <span className="text-gray-600">Upload Pic</span>
             </div>
           )}
