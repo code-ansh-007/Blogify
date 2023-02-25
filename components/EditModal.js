@@ -116,17 +116,16 @@ const EditModal = ({ blogId }) => {
         <main className="flex flex-col max-h-[700px] overflow-y-hidden items-center justify-center p-5 rounded-md bg-white">
           <span className="text-3xl text-gray-500 mb-5">Edit Blog</span>
           <form onSubmit={updatePost} className="flex flex-col space-y-10">
-            <input
-              type="text"
+            <textarea
               name="title"
               id="title"
-              className="border-b border-gray-400 h-10 outline-none"
               placeholder="Title..."
-              value={newTitle}
+              value={title}
               onChange={(e) => {
-                setNewTitle(e.target.value);
+                setTitle(e.target.value);
               }}
-            />
+              className="resize-none scrollbar-thin scrollbar-thumb-gray-400 w-full overflow-auto break-words border-b border-gray-400 h-10 outline-none"
+            ></textarea>
             {newSelectedFile ? (
               <div className="relative">
                 <img

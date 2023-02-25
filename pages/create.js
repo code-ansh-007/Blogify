@@ -99,17 +99,17 @@ const create = () => {
       <main className="flex flex-col items-center justify-center h-full">
         <span className="text-3xl text-gray-600 mb-5">Create Blog</span>
         <form onSubmit={uploadPost} className="flex flex-col space-y-10">
-          <input
-            type="text"
+          <textarea
             name="title"
             id="title"
-            className="border-b border-gray-400 h-10 outline-none"
             placeholder="Title..."
             value={title}
             onChange={(e) => {
               setTitle(e.target.value);
             }}
-          />
+            className="resize-none scrollbar-thin scrollbar-thumb-gray-400 w-full overflow-auto break-words border-b border-gray-400 h-10 outline-none"
+          ></textarea>
+
           {selectedFile ? (
             <div className="relative flex">
               <img
