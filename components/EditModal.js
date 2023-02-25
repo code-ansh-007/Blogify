@@ -113,7 +113,7 @@ const EditModal = ({ blogId }) => {
         onClick={handleClose}
         className="h-full fixed top-0 left-0 w-full flex flex-col items-center justify-center bg-black bg-opacity-50"
       >
-        <main className="flex flex-col max-h-[700px] overflow-y-hidden items-center justify-center p-5 rounded-md bg-white">
+        <main className="flex flex-col max-h-[700px] overflow-scroll items-center  p-5 rounded-md bg-white">
           <span className="text-3xl text-gray-500 mb-5">Edit Blog</span>
           <form onSubmit={updatePost} className="flex flex-col space-y-10">
             <textarea
@@ -135,7 +135,7 @@ const EditModal = ({ blogId }) => {
                 />
                 <span
                   onClick={() => setNewSelectedFile(null)}
-                  className="bg-black bg-opacity-30 text-white text-center py-4 font-semibold absolute bottom-0 w-full"
+                  className="bg-black bg-opacity-30 text-white text-center py-4 font-semibold absolute bottom-0 w-[300px]"
                 >
                   Select another one
                 </span>
