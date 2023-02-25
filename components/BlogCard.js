@@ -92,17 +92,17 @@ const BlogCard = ({
           </div>
         </div>
         {/* IMAGES SECTION */}
-        <div onClick={handleClick}>
-          <div>
+        <div onClick={handleClick} className="">
+          <div className="sm:h-[450px] sm:w-[650px] w-[400px] h-[300px]">
             <img
               src={image}
-              className="object-cover w-full rounded-lg"
+              className="object-cover w-full h-full rounded-lg"
               alt="pic"
             />
           </div>
           <div className="pl-1 py-2">
             <div className="flex">
-              <span className="text-xl sm:text-md font-bold w-[300px] truncate">
+              <span className="text-xl sm:text-md font-bold  w-[300px] sm:w-[600px] cursor-pointer truncate">
                 {title}
               </span>
             </div>

@@ -142,7 +142,7 @@ const EditModal = ({ blogId }) => {
               </div>
             ) : (
               <div
-                className="flex items-center space-x-2"
+                className="flex items-center space-x-2 cursor-pointer"
                 onClick={() => imagePickerRef.current.click()}
               >
                 <AiFillCamera className="text-3xl text-gray-500 active:scale-105 transition transform duration-200" />

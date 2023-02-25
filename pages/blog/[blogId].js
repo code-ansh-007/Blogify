@@ -20,7 +20,13 @@ const BlogDetail = () => {
           <span className="font-semibold">{username}</span>
         </span>
         <div className="mt-5 flex flex-col space-y-3">
-          <img src={image} alt="pic" className="rounded-md md:max-w-3xl" />
+          <div className="w-[400px] h-[300px] sm:h-[300px] sm:w-[500px]">
+            <img
+              src={image}
+              className="object-cover w-full h-full rounded-lg"
+              alt="pic"
+            />
+          </div>
           <div className="pl-3 flex flex-col items-start space-y-1">
             <span className="text-2xl font-semibold text-gray-700">
               {title}
