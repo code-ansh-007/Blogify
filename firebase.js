@@ -11,13 +11,6 @@ const firebaseConfig = {
   storageBucket: process.env.NEXT_PUBLIC_STORAGEBUCKET,
   messagingSenderId: process.env.NEXT_PUBLIC_MESSAGINGSENDERID,
   appId: process.env.NEXT_PUBLIC_APPID,
-
-  // apiKey: "AIzaSyAm_DB-68k5yM-1Ofze2kBA3KNjU5A0reg",
-  // authDomain: "blogify-39540.firebaseapp.com",
-  // projectId: "blogify-39540",
-  // storageBucket: "blogify-39540.appspot.com",
-  // messagingSenderId: "921767423307",
-  // appId: "1:921767423307:web:7a932f14d282bc46df8cce",
 };
 
 // Initialize Firebase
