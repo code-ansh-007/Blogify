@@ -47,7 +47,7 @@ const BlogCard = ({
 
   return (
     <>
-      <section className="bg-white flex flex-col my-5 border-b-[1px] border-gray-400 mx-1 md:mx-0 max-w-3xl">
+      <section className="bg-white flex flex-col my-5  mx-1 md:mx-0 max-w-3xl">
         {/* TOP SECTION */}
         <div className="flex items-center justify-between px-3 pl-0 py-2 ">
           <span className="flex space-x-3 items-center">
