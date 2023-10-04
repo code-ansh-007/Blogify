@@ -39,7 +39,7 @@ export default function Home() {
         className={
           loading
             ? "flex flex-col h-full items-center justify-center"
-            : " flex-col items-center justify-center place-items-center grid grid-cols-2"
+            : "flex flex-col items-center justify-center place-items-center md:grid grid-cols-2"
         }
       >
         {loading ? (
